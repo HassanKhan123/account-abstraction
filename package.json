@@ -1,0 +1,22 @@
+{
+  "name": "biconomy-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@biconomy/core-types": "^2.0.0",
+    "@biconomy/smart-account": "^2.0.0",
+    "@truffle/hdwallet-provider": "^2.1.11",
+    "ethers": "^5.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
