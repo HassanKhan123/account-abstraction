@@ -4,10 +4,12 @@ const { ChainId } = require("@biconomy/core-types");
 const SmartAccount = require("@biconomy/smart-account").default;
 
 const privateKey = "pkey";
+const rpcUrl = "https://rpc.ankr.com/polygon_mumbai/";
 
 const initSmartAccount = async () => {
   let provider = new HDWalletProvider(privateKey, rpcUrl);
   const walletProvider = new ethers.providers.Web3Provider(provider);
+  // get EOA address from wallet provider
   const eoa = await walletProvider.getSigner().getAddress();
   console.log(`EOA address: ${eoa}`);
 
